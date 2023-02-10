@@ -1,1 +1,2 @@
-print("helloworld!!")
+print("helloworld!!") 
+print("welcome to algorithm study")
