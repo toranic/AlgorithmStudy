@@ -15,7 +15,8 @@
 					"source" : ".",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				}
 			],
@@ -30,7 +31,8 @@
 					"name" : "Week_1",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				}
 			],
@@ -38,9 +40,16 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "Week_1::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Week_1-Debug-64e9940336c91ec443df.json",
-					"name" : "Week_1",
+					"id" : "11720::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-11720-Debug-16c101754227d5e527ca.json",
+					"name" : "11720",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "1546::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-1546-Debug-b531349ab49e1634d057.json",
+					"name" : "1546",
 					"projectIndex" : 0
 				}
 			]
