@@ -2,7 +2,6 @@
 #include <vector>
 using namespace std;
 
-//cnt를 int가 아닌 long으로 선언
 int main() {
 	ios::sync_with_stdio(false);
 	cin.tie(NULL);
