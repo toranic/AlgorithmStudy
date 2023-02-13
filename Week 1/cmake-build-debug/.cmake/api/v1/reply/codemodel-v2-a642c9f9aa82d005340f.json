@@ -1,0 +1,87 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.24"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Week_1",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "11659::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-11659-Debug-aeefa3e58f357e4d9ef8.json",
+					"name" : "11659",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "11660::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-11660-Debug-6940d39377636b2f8044.json",
+					"name" : "11660",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "11720::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-11720-Debug-16c101754227d5e527ca.json",
+					"name" : "11720",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "1546::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-1546-Debug-b531349ab49e1634d057.json",
+					"name" : "1546",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/ham0__0/Desktop/dev/cpp-algorithm/Week 1/cmake-build-debug",
+		"source" : "/Users/ham0__0/Desktop/dev/cpp-algorithm/Week 1"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

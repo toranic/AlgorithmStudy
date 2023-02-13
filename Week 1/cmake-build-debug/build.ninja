@@ -1,0 +1,232 @@
+## This file contains all the build statements describing the
+# compilation DAG.
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# 
+# Which is the root file.
+# =============================================================================
+
+# =============================================================================
+# Project: Week_1
+# Configurations: Debug
+# =============================================================================
+
+#############################################
+# Minimal version of Ninja required by this file
+
+ninja_required_version = 1.5
+
+
+#############################################
+# Set configuration variable for custom commands.
+
+CONFIGURATION = Debug
+# =============================================================================
+# Include auxiliary files.
+
+
+#############################################
+# Include rules file.
+
+include CMakeFiles/rules.ninja
+
+# =============================================================================
+
+#############################################
+# Logical path to working directory; prefix for absolute paths.
+
+cmake_ninja_workdir = /Users/ham0__0/Desktop/dev/cpp-algorithm/Week$ 1/cmake-build-debug/
+# =============================================================================
+# Object build statements for EXECUTABLE target 1546
+
+
+#############################################
+# Order-only phony target for 1546
+
+build cmake_object_order_depends_target_1546: phony || CMakeFiles/1546.dir
+
+build CMakeFiles/1546.dir/1546.cpp.o: CXX_COMPILER__1546_Debug /Users/ham0__0/Desktop/dev/cpp-algorithm/Week$ 1/1546.cpp || cmake_object_order_depends_target_1546
+  DEP_FILE = CMakeFiles/1546.dir/1546.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -fcolor-diagnostics -std=gnu++17
+  OBJECT_DIR = CMakeFiles/1546.dir
+  OBJECT_FILE_DIR = CMakeFiles/1546.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 1546
+
+
+#############################################
+# Link the executable 1546
+
+build 1546: CXX_EXECUTABLE_LINKER__1546_Debug CMakeFiles/1546.dir/1546.cpp.o
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk
+  OBJECT_DIR = CMakeFiles/1546.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = 1546
+  TARGET_PDB = 1546.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 11720
+
+
+#############################################
+# Order-only phony target for 11720
+
+build cmake_object_order_depends_target_11720: phony || CMakeFiles/11720.dir
+
+build CMakeFiles/11720.dir/11720.cpp.o: CXX_COMPILER__11720_Debug /Users/ham0__0/Desktop/dev/cpp-algorithm/Week$ 1/11720.cpp || cmake_object_order_depends_target_11720
+  DEP_FILE = CMakeFiles/11720.dir/11720.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -fcolor-diagnostics -std=gnu++17
+  OBJECT_DIR = CMakeFiles/11720.dir
+  OBJECT_FILE_DIR = CMakeFiles/11720.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 11720
+
+
+#############################################
+# Link the executable 11720
+
+build 11720: CXX_EXECUTABLE_LINKER__11720_Debug CMakeFiles/11720.dir/11720.cpp.o
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk
+  OBJECT_DIR = CMakeFiles/11720.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = 11720
+  TARGET_PDB = 11720.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 11659
+
+
+#############################################
+# Order-only phony target for 11659
+
+build cmake_object_order_depends_target_11659: phony || CMakeFiles/11659.dir
+
+build CMakeFiles/11659.dir/11659.cpp.o: CXX_COMPILER__11659_Debug /Users/ham0__0/Desktop/dev/cpp-algorithm/Week$ 1/11659.cpp || cmake_object_order_depends_target_11659
+  DEP_FILE = CMakeFiles/11659.dir/11659.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -fcolor-diagnostics -std=gnu++17
+  OBJECT_DIR = CMakeFiles/11659.dir
+  OBJECT_FILE_DIR = CMakeFiles/11659.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 11659
+
+
+#############################################
+# Link the executable 11659
+
+build 11659: CXX_EXECUTABLE_LINKER__11659_Debug CMakeFiles/11659.dir/11659.cpp.o
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk
+  OBJECT_DIR = CMakeFiles/11659.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = 11659
+  TARGET_PDB = 11659.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 11660
+
+
+#############################################
+# Order-only phony target for 11660
+
+build cmake_object_order_depends_target_11660: phony || CMakeFiles/11660.dir
+
+build CMakeFiles/11660.dir/11660.cpp.o: CXX_COMPILER__11660_Debug /Users/ham0__0/Desktop/dev/cpp-algorithm/Week$ 1/11660.cpp || cmake_object_order_depends_target_11660
+  DEP_FILE = CMakeFiles/11660.dir/11660.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -fcolor-diagnostics -std=gnu++17
+  OBJECT_DIR = CMakeFiles/11660.dir
+  OBJECT_FILE_DIR = CMakeFiles/11660.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 11660
+
+
+#############################################
+# Link the executable 11660
+
+build 11660: CXX_EXECUTABLE_LINKER__11660_Debug CMakeFiles/11660.dir/11660.cpp.o
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk
+  OBJECT_DIR = CMakeFiles/11660.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = 11660
+  TARGET_PDB = 11660.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd "/Users/ham0__0/Desktop/dev/cpp-algorithm/Week 1/cmake-build-debug" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build edit_cache: phony CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd "/Users/ham0__0/Desktop/dev/cpp-algorithm/Week 1/cmake-build-debug" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S"/Users/ham0__0/Desktop/dev/cpp-algorithm/Week 1" -B"/Users/ham0__0/Desktop/dev/cpp-algorithm/Week 1/cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build rebuild_cache: phony CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Target aliases.
+
+# =============================================================================
+# Folder targets.
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/ham0__0/Desktop/dev/cpp-algorithm/Week 1/cmake-build-debug
+
+build all: phony 1546 11720 11659 11660
+
+# =============================================================================
+# Built-in targets
+
+
+#############################################
+# Re-run CMake if any of its inputs changed.
+
+build build.ninja: RERUN_CMAKE | /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/UnixPaths.cmake /Users/ham0__0/Desktop/dev/cpp-algorithm/Week$ 1/CMakeLists.txt CMakeCache.txt CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeCXXCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake
+  pool = console
+
+
+#############################################
+# A missing CMake input file is not an error.
+
+build /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/UnixPaths.cmake /Users/ham0__0/Desktop/dev/cpp-algorithm/Week$ 1/CMakeLists.txt CMakeCache.txt CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeCXXCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake: phony
+
+
+#############################################
+# Clean all the built files.
+
+build clean: CLEAN
+
+
+#############################################
+# Print all primary targets available.
+
+build help: HELP
+
+
+#############################################
+# Make the all target the default.
+
+default all
