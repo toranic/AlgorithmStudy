@@ -17,4 +17,19 @@ int main() {
     }
     
     sort(arr, arr+n);
-    cout<<arr[0];
+    
+    int a=0; //front
+    int b=n-1; //rear
+    
+    int sum;
+    int result=0;
+
+    while(a<b){
+        sum=arr[a]+arr[b];
+        if(sum==m){result++;a++;b--;}
+        else if(sum<m){a++;}
+        else{b--;} //sum>m
+    }
+    
+    cout<<result;
+}
