@@ -1,6 +1,0 @@
-/Users/ham0__0/Desktop/dev/cpp-algorithm/Week 1/cmake-build-debug/CMakeFiles/1546.dir
-/Users/ham0__0/Desktop/dev/cpp-algorithm/Week 1/cmake-build-debug/CMakeFiles/11720.dir
-/Users/ham0__0/Desktop/dev/cpp-algorithm/Week 1/cmake-build-debug/CMakeFiles/11659.dir
-/Users/ham0__0/Desktop/dev/cpp-algorithm/Week 1/cmake-build-debug/CMakeFiles/11660.dir
-/Users/ham0__0/Desktop/dev/cpp-algorithm/Week 1/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/ham0__0/Desktop/dev/cpp-algorithm/Week 1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
