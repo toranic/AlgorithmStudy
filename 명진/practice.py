@@ -1,3 +1,6 @@
+# 파이썬이 훨씬 편하다..
+# 10번 DNA 비밀번호 (12891)
+
 import sys
 
 input = sys.stdin.readline
