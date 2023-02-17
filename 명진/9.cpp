@@ -38,8 +38,7 @@
 //
 //    cout << DNAmap.find("C")->first << '\n';
 //
-//
-//
+
 //
 //}
 
