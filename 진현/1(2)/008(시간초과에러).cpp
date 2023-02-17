@@ -29,7 +29,7 @@ int main() {
             if(arr[a]+arr[b]==find){
                 if(a!=i && b!=i){good++;break;}
                 else if(a==i){a++;}
-                else if(b==i){b++;}
+                else if(b==i){b--;} //b는 뒤에서 오니까 i와 같을 때는 --해줘야한다!!
             }
             else if(arr[a]+arr[b]<find){a++;}
             else{b--;}
