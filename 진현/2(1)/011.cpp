@@ -39,7 +39,7 @@ int main(){
     }
     
     if(state){
-        for(i=1;i<result.size();i++){
+        for(i=1;i<result.size();i++){ //질문하기!
             cout<<result[i]<<"\n";
         }
     }
