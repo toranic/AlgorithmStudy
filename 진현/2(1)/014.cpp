@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <cmath>
 using namespace std;
 
 int main(){
@@ -22,8 +23,14 @@ int main(){
         else{
             int idx = heap.size(); //힙에 입력될 값의 index
             heap.push_back(op);
-            while(op/2>0){ //부모 노드가 있을 때까지 반복
+            while(idx/2>0){ //부모 노드가 있을 때까지 반복
+                if(pow(heap[idx/2],2)>pow(op,2)){ 
+                //새로운 수가 절대값이 작은 경우
                 
+                }
+                else if(pow(heap[idx/2],2)>pow(op,2)){
+                    
+                }
             }
         }
     }
