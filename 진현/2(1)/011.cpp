@@ -3,45 +3,52 @@
 using namespace std;
 
 int main(){
-    
     ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
     
     int n; 
     cin >> n;
     
-    vector<int> origin(n,0);
-    for(int i=0 ; i<n ; i++){origin[i]=n-i;}//n,n-1,...,0
-    
-    vector<int> stack(n,0); //stack
+    vector<int> A(n,0); //0 초기화
     int top=-1;
     
-    vector<int> result(n,0); //result (+:1, -:0)
+    vector<int> result;
     
-    int tmp=0;
+    int nn=1; //push할 자연수
+    
     int i;
+    int k;
+    
     for(i=0 ; i<n ; i++){
-        cin>>tmp;
-        while(tmp>stack[top]){
-            origin.pop_back();//여기 고쳐야함
-            stack.push_back();
-            result.push_back(1);
-            top++;
-        }
-        if(tmp!=stack[top]){
-            cout<<"NO"; 
-            i=n+1;//for문 종료
-        }
-        else{ //tmp==stack[top]
-            stack.pop_back();
+        cin>>k;
+        if(k>=nn){
+            while(k==nn){
+                //time to push
+                A.push_back(nn++); 
+                top++;
+                result.push_back(1);
+            }
+            A.pop_back();
+            top--;
             result.push_back(0);
+        }
+        else{ //k<nn
+            if(A[top]>k){
+                result[0]==-1;
+                cout<<"a";
+            }
+            else{
+                result.push_back(0);
+            }
+            A.pop_back();
             top--;
         }
     }
     
-    if(i==n){
-        for(int j=0;j<n;j++){
-            if(result[j]==0){cout<<"-\n";}
-            else{cout<<"+\n";}
+    if(result[0]==-1)cout<<"NO"; 
+    else{
+        for(i=0;i<result.size();i++){
+            if(result[i]==0)cout<<"-\n";
+            else if(result[i]==1)cout<<"+\n";
         }
     }
     return 0;
