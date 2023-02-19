@@ -17,11 +17,14 @@ int main(){
     
     int i;
     int k;
+    bool state=true;
+    
+    result.push_back(1);
     
     for(i=0 ; i<n ; i++){
         cin>>k;
         if(k>=nn){
-            while(k==nn){
+            while(k!=nn){
                 //time to push
                 A.push_back(nn++); 
                 top++;
@@ -33,8 +36,9 @@ int main(){
         }
         else{ //k<nn
             if(A[top]>k){
-                result[0]==-1;
-                cout<<"a";
+                state=false;
+                cout<<"NO";
+                i=n+1;
             }
             else{
                 result.push_back(0);
@@ -44,8 +48,7 @@ int main(){
         }
     }
     
-    if(result[0]==-1)cout<<"NO"; 
-    else{
+    if(state){
         for(i=0;i<result.size();i++){
             if(result[i]==0)cout<<"-\n";
             else if(result[i]==1)cout<<"+\n";
