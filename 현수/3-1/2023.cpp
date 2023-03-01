@@ -27,7 +27,7 @@ void dfs(int n)
 	{
 		temp /= 10;
 	}
-	if (temp >= 1 && temp < 10)
+	if (temp >= 1 && temp < 10 && check(n))
 	{
 		cout << n << '\n';
 		return;
@@ -36,7 +36,7 @@ void dfs(int n)
 	{
 		if (check(n))
 		{
-			bfs(n * 10 + i);
+			dfs(n * 10 + i);
 		}
 	}
 }
@@ -53,6 +53,6 @@ int main(void)
 			dfs(i);
 		}
 	}
-	
+
 	return 0;
 }
