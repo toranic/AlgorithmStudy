@@ -22,7 +22,7 @@ void dfs(int s)
 		ss.pop();
 		for (auto next : vv[cnt])
 		{
-			if (visited[next]==0)
+			if (visited[next] == 0)
 			{
 				visited[next] = 1;
 				ss.push(next);
@@ -33,10 +33,10 @@ void dfs(int s)
 
 int main(void)
 {
-	ios_base::sync_with_stdio(false); 
-	cin.tie(NULL); 
+	ios_base::sync_with_stdio(false);
+	cin.tie(NULL);
 	cout.tie(NULL);
-	int N, M,ans;
+	int N, M, ans=0;
 	cin >> N >> M;
 	for (int i = 0; i < M; i++)
 	{
