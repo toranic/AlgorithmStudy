@@ -19,10 +19,34 @@ int main(){
     //가로 B, 세로 A 의 크기를 가지는 AxB 벡터를 모두 0으로 초기화
     //vector.resize(A+1, std::vector<int>(B+1,0));
     
-    visited = vector<bool>(N+1, false);
+    visited = vector<bool>(n+1, false);
     
     for(int i=0;i<m;i++){
-        
+        int s,e;
+        cin>>s>>e;
+        A[s].push_back(e);
+        A[e].push_back(s);
     }
     
+    int count = 0;
+    
+    for(int i=1;i<n+1;i++){
+        if(!visited[i]){ //방문배열의 값이 false일 때
+            count++; // 방문하지 않았던 새로운 연결 요소이므로 count++
+            DFS(i);
+        }
+    }
+    cout<<count<<"\n";
+}
+
+void DFS(int v){
+    if(visited[v]){ //방문 이력이 있으면 종료
+        return;
+    }
+    //방분 이력이 없을 경우
+    visited[v]=true;
+    for(int i : A[v]){
+        if(visited[i]==false)
+            DFS(i);
+    }
 }
