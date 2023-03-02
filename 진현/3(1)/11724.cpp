@@ -45,8 +45,8 @@ void DFS(int v){
     }
     //방분 이력이 없을 경우
     visited[v]=true;
-    for(int i : A[v]){
+    for(int i : A[v]){ //A[v]에 수가 없을 때까지, i에 A[v][0], A[v][1],...를 차례대로 집어넣는 반복문
         if(visited[i]==false)
-            DFS(i);
+            DFS(i); //v의 인접노드가 방문이력이 없으면 DFS를 재귀 돌린다.
     }
 }
