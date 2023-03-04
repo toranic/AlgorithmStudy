@@ -11,16 +11,22 @@ int main(void) {
 		cin >> time[i];
 
 	//삽입정렬 - 오름차순 정렬일 때 시간의 합이 가장 짧다
-	int temp;
-	for (int i = 0; i < N - 1; i++) {
-		int j = i;
-		while (time[j] > time[j + 1]) {
-			temp = time[j];
-			time[j] = time[j + 1];
-			time[j + 1] = temp;
-			j--;
-		}
+	for (int i = 0; i < N; i++) {
+		int point = i;
+		int value = time[i];
+		for(int j=i-1; j>=0 ; j--){
+			if(time[j]<time[i]){
+				point = j+1;
+				break;
+			}
+			if(j==0){
+				point = 0;
+			}
 	}
+	for(int j=i ; i>point ; j--){
+		time[j]=time[j-1];
+	}
+	time[point]=value;
 
 	//시간의 합 구하기
 	for (int i = 0; i < N; i++) {
