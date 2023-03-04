@@ -1,11 +1,14 @@
 #include <iostream>
 #include <vector>
+#include <queue>
+#include <algorithm>
 using namespace std;
 
 static vector <vector <int>> A; //인접 리스트
 static vector <bool> visited; //방문배열
 void DFS(int v); //깊이우선탐색 함수
-void BFS(int v); //너비우선탐색 함수
+void BFS(); //너비우선탐색 함수
+static queue<int> Q; //BFS에 쓸 큐
 
 int main(){
     ios::sync_with_stdio(false);
@@ -25,11 +28,15 @@ int main(){
         A[s].push_back(e);
         A[e].push_back(s);
     }
+    for(int i=0 ; i<n ; i++){ //정렬, push_front기능을 찾아봤는데 없음...sort가 최선인가?!
+        sort(A[i].begin(), A[i].end());
+    }
 
     DFS(start); cout<<"\n";
-
     visited = vector <bool>(n+1, false); //방문이력 초기화
-    
+
+    Q.push(start);
+    BFS();
 }
 
 void DFS(int v){
@@ -45,6 +52,21 @@ void DFS(int v){
     }
 }
 
-void BFS(int v){
+void BFS(){
+    while(!Q.empty())//큐가 비어 있지 않을 때까지 반복
+    {
+        int node;
+        node = Q.front(); //앞 데이터 반환
+        Q.pop(); //node pop
 
+        if (visited[node] == false) {
+            cout << node << " ";
+            visited[node] = true;
+
+            for (int i: A[node]) {
+                if (visited[i] == false)
+                    Q.push(i);
+            }
+        }
+    }
 }
