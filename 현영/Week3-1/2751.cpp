@@ -8,8 +8,12 @@ int result[1000001];
 void merge(int s, int m, int e)
 {
     int i, j, k;
+
+    // 왼쪽 리스트의 시작점
     i = s;
+    // 오른쪽 리스트의 시작점
     j = m + 1;
+    // 채워넣을 시작점
     k = s;
 
     while (i <= m && j <= e)
@@ -21,10 +25,15 @@ void merge(int s, int m, int e)
             result[k++] = numbers[j++];
     }
 
+
+    // 1 2 3 4 5     6 7 8 9 10
+
     // 왼쪽 리스트의 값들이 결과배열에 다 들어간 경우 남은 오른쪽 리스트의 값들 다 넣기
+    // 왼쪽 리스트의 시작점이 오른쪽으로 넘어간 경우
     if (i > m)
         while (j <= e)
             result[k++] = numbers[j++];
+
     // 오른쪽 리스트의 값들이 결과배열에 다 들어간 경우 남은 왼쪽 리스트의 값들 다 넣기
     else
         while (i <= m)
