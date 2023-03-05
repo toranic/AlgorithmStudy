@@ -1,7 +1,8 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
-#include <deque>
+#include <queue>
+
 using namespace std;
 
 vector<vector<int>>graph(1001);
