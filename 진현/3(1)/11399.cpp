@@ -23,7 +23,7 @@ int main(void) {
 				point = 0;
 			}
 	}
-	for(int j=i ; i>point ; j--){
+	for(int j=i ; j>point ; j--){
 		time[j]=time[j-1];
 	}
 	time[point]=value;
