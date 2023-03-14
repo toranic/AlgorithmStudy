@@ -20,7 +20,6 @@ int main() {
             cnt += min(x, n);
         }
 
-//        cout << cnt << " " << mid << endl;
 
         if (left >= right) {
             cout << mid;
