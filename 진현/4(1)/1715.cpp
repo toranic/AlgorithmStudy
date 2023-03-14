@@ -1,34 +1,34 @@
 #include <iostream>
-#include <vector>
-#include <algorithm>
+#include <queue>
 using namespace std;
+
 int main(){
     ios::sync_with_stdio(false); 
-		cin.tie(NULL); 
-		cout.tie(NULL); 
+	cin.tie(NULL); 
+	cout.tie(NULL); 
     
     int N;
     cin>>N;
-    vector <int>A(N);
+    priority_queue<int, vector<int>, greater<int>> A;
     int result=0;
     
     int k;
     for(int i=0 ; i<N ; i++){
         cin>>k;
-        A[i]=k;
+        A.push(k);
     }
     
-    sort(A.begin(), A.end());
+    int fst, sec;
     
-    k=2;
-    for(int i=0 ; i<N-1 ; i++){
-        int semi_result=0;
-        for(int j=0 ; j<k ; j++){
-            semi_result += A[j]; 
-        }
-        result += semi_result;
-        cout<<semi_result<<"\n";
-        k++;
+    while(A.size() != 1){
+        fst = A.top();
+        A.pop();
+        sec = A.top();
+        A.pop();
+        
+        result += fst+sec;
+        A.push(fst+sec);
     }
+    
     cout<<result;
 }
