@@ -8,35 +8,35 @@ int main() {
     cin.tie(NULL);
     cout.tie(NULL);
 
-    int N;
+    long N;
     cin>>N;
 
-    vector <long> arr(1000001);
+    vector <long> arr(1003002);
 
-    for(int i=0;i<1000001;i++){
+    for(int i=0;i<1003002;i++){
         arr[i]=i;
     }
     arr[1]=0;
 
 
-    for(int i=2;i<=sqrt(1000001);i++){
+    for(int i=2;i<=sqrt(1003002);i++){
         if(arr[i]!=0) {
-            for (int j = i + i ; j < 1000001 ; j += i) {
+            for (int j = i + i ; j < 1003002 ; j += i) {
                 arr[j]=0;
             }
         }
     }
 
-    vector <char> number;
+    vector <long> number;
 
-    for(int i=N;i<=1000001;i++){
+    for(int i=N;i<1003002;i++){
         if(arr[i]!=0){
-            number = vector <char>(0);
+            number = vector <long>(0);
             int tmp=arr[i];
 
             while(tmp!=0){
                 number.push_back(tmp%10);
-                tmp/10;
+                tmp = tmp/10;
             }
 
             int j=0;
@@ -55,7 +55,7 @@ int main() {
 
             if(palindrome==true){
                 cout<<arr[i];
-                return 0;
+                break;
             }
 
         }
