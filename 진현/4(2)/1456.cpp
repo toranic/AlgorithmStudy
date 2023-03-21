@@ -22,7 +22,7 @@ int main() {
 
 
     for(int i=2;i<=size;i++){
-        if(arr[i]!=0) { //변경
+        if(arr[i]!=0) { 
             for (int j = i + i; j <= N; j += i) {
                 arr[j] = 0; //소수가 아닌 수 0
             }
