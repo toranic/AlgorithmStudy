@@ -25,7 +25,6 @@ long long gcd(long long x, long long y) {
     return b;
 }
 
-
 int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
